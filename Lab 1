@@ -1,0 +1,9 @@
+import math as m
+u=((25+(136)**0.5)/(0.00034)**(1/5))
+v=m.tan(m.cos(m.pi/5)+m.cos((2*m.pi)/5))*m.log(5)
+if 2*abs(u)<v:
+    P=((m.e)**-u+(m.e)**-v)/(2*abs(u)+3*abs(v))
+    print(P)
+else:
+    P=u+v
+    print(P)
